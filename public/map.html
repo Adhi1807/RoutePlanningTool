@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Geocoding and Route</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxYIOkgrXMNahDYffeeH-S4iFArljcKq0&libraries=geometry&loading=async"></script>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        #routeList {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #routeList h2 {
+            color: #333;
+        }
+
+        #routeList ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        #routeList li {
+            background-color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map" style="height: 400px;"></div>
+    <center>
+        <h2>Your Route Order is Processing please wait...</h2>
+        <div id="routeList"></div>
+
+        <h3>You can zoom in the Map to see the Route</h3>
+    </center>
+    
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

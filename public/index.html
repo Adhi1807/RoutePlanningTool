@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Route Planning Tool</title>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxYIOkgrXMNahDYffeeH-S4iFArljcKq0&loading=async"></script>
+</head>
+
+<body>
+    <h2>Route Planning Tool</h2>
+    <div class="map-container">
+        <label for="addressInput">Enter Address:</label><br>
+        <input type="text" id="addressInput" placeholder="Enter address" autocomplete="off">
+
+        <div class="btn">
+            <button type="button" onclick="addAddress()">Add Address</button>
+        </div>
+        <ul id="addressList"></ul>
+
+        <label for="technicianLocationInput">Enter Technician's Location:</label><br>
+        <input type="text" id="technicianLocationInput" placeholder="Technician's location"><br>
+
+        <div class="btn">
+            <button type="button" id="add-technician-location-btn" onclick="addTechnicianLocation()">Add Technician's Location</button>
+        </div>
+
+        <p id="technicianMessage"></p>
+
+        <div class="btn1">
+            <button onclick="redirectToMap()">Plan Route</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
